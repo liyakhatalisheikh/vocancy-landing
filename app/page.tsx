@@ -1,11 +1,12 @@
 import Navbar from "@/components/ui/Navbar";
 import Hero from "@/components/landing/Hero";
-import ProblemSolution from "@/components/landing/ProblemSolution";
+// import ProblemSolution from "@/components/landing/ProblemSolution"; // Commented out for streamlining
 import Benefits from "@/components/landing/Benefits";
-import Founder from "@/components/landing/Founder";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Pricing from "@/components/landing/Pricing";
+import FAQ from "@/components/landing/FAQ";
 import ApplyForm from "@/components/landing/ApplyForm";
+import WhatHappens from "@/components/landing/WhatHappens";
 import Footer from "@/components/landing/Footer";
 
 export default function Home() {
@@ -13,12 +14,13 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <ProblemSolution />
-      <Benefits />
-      <Founder />
       <HowItWorks />
+      {/* <ProblemSolution /> */}
+      <Benefits />
       <Pricing />
+      <FAQ />
       <ApplyForm />
+      <WhatHappens />
       <Footer />
     </main>
   );

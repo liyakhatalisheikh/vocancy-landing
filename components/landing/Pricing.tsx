@@ -10,42 +10,49 @@ export default function Pricing() {
                 </h2>
                 <p className="text-center text-slate-400 mb-12 text-lg">Early access pricing for engineers</p>
 
-                <div className="max-w-lg mx-auto bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 border-2 border-emerald-500 rounded-2xl p-8 relative overflow-hidden">
-
-                    <div className="absolute top-4 right-4 bg-emerald-500 text-slate-950 px-3 py-1 rounded-full text-xs font-bold">
-                        BETA
+                <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 bg-brand-green text-obsidian text-xs font-bold px-3 py-1 rounded-bl-lg font-mono">
+                        BETA PRICING
                     </div>
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                        <div className="text-center md:text-left">
+                            <h3 className="text-3xl font-bold text-white mb-2">Beta Access</h3>
+                            <div className="flex items-baseline justify-center md:justify-start gap-2">
+                                <span className="text-5xl font-extrabold text-brand-green">$199</span>
+                                <span className="text-lg text-slate-500 line-through decoration-slate-500">$499</span>
+                            </div>
+                            <p className="text-slate-400 mt-2 font-mono text-sm">One-time payment. 200+ Applications.</p>
+                        </div>
 
-                    <div className="text-center mb-8">
-                        <div className="text-6xl font-extrabold text-white mb-2">$99</div>
-                        <div className="text-slate-400 text-base">Beta pricing</div>
-                    </div>
-
-                    <ul className="space-y-3 mb-8">
-                        {[
-                            "500 tech job applications over 2-3 weeks",
-                            "Resume optimization for each role type",
-                            "Daily WhatsApp updates with screenshots",
-                            "Personal attention from our team",
-                            "Full transparency - see every application",
-                            "Real-time dashboard to track progress"
-                        ].map((item, i) => (
-                            <li key={i} className="flex items-start gap-3 text-slate-200 text-base">
-                                <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                                <span>{item}</span>
+                        <ul className="space-y-3 text-left">
+                            <li className="flex items-center gap-3 text-slate-300">
+                                <Check className="w-5 h-5 text-brand-green flex-shrink-0" />
+                                <span>Manually applied by Senior Engineer</span>
                             </li>
-                        ))}
-                    </ul>
-
-                    <Link
-                        href="#apply"
-                        className="block w-full px-8 py-4 bg-emerald-500 text-slate-950 font-bold text-base rounded-lg hover:bg-emerald-400 transition text-center"
-                    >
-                        Join Beta - $99 →
-                    </Link>
-
-                    <div className="mt-6 text-center text-sm text-slate-400">
-                        <div>✓ 24hr response • ✓ Secure payment</div>
+                            <li className="flex items-center gap-3 text-slate-300">
+                                <Check className="w-5 h-5 text-brand-green flex-shrink-0" />
+                                <span>200+ targeted applications</span>
+                            </li>
+                            <li className="flex items-center gap-3 text-slate-300">
+                                <Check className="w-5 h-5 text-brand-green flex-shrink-0" />
+                                <span>Resume tailoring included</span>
+                            </li>
+                            <li className="flex items-center gap-3 text-slate-300">
+                                <Check className="w-5 h-5 text-brand-green flex-shrink-0" />
+                                <span>Daily WhatsApp updates</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="mt-10 text-center">
+                        <Link
+                            href="#apply"
+                            className="inline-block w-full md:w-auto px-10 py-4 bg-brand-green text-obsidian font-bold text-lg rounded-lg hover:bg-brand-green/90 transition"
+                        >
+                            Get Beta Access →
+                        </Link>
+                        <p className="mt-4 text-sm text-slate-400">
+                            Early beta pricing. Secure your access now.
+                        </p>
                     </div>
                 </div>
             </div>

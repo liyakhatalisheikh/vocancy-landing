@@ -10,8 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         slate: {
-            950: '#020617', // Deep IDE Background
+          950: '#020617', // Deep IDE Background
         },
+        'brand-green': '#3DF2B5',
+        'obsidian': '#030303',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
