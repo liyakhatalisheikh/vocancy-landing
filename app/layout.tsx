@@ -13,6 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vocancy.com"),
   title: "Vocancy | Job Application Service for Software Engineers",
   description: "Human-powered job application service for software engineers. We manually apply to 200+ tech jobs for you while you focus on interview prep.",
   keywords: ["job application service", "apply to jobs for me", "automated job search", "job search help", "reverse recruiter for engineers", "tech career agent", "human powered job search"],
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Vocancy",
-    description: "Stop Applying. Start Interviewing. We apply to 500+ tech jobs for you.",
+    description: "Stop Applying. Start Interviewing. We apply to 200+ tech jobs for you.",
   },
   robots: {
     index: true,
