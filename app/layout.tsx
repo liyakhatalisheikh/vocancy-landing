@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://vocancy.com"),
   title: "Vocancy | Job Application Service for Software Engineers",
   description: "Human-powered job application service for software engineers. We manually apply to 200+ tech jobs for you while you focus on interview prep.",
-  keywords: ["job application service", "apply to jobs for me", "automated job search", "job search help", "reverse recruiter for engineers", "tech career agent", "human powered job search"],
+  keywords: ["job application service", "apply to jobs for me", "manual job search", "job search help", "reverse recruiter for engineers", "tech career agent", "human powered job search"],
   openGraph: {
     title: "Vocancy | We Apply to Tech Jobs For You",
     description: "Human-powered job application service for software engineers. We apply to 200+ tech jobs for you.",

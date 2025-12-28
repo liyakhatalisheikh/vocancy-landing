@@ -19,7 +19,7 @@ export default function Pricing() {
                             <h3 className="text-3xl font-bold text-white mb-2">Beta Access</h3>
                             <div className="flex items-baseline justify-center md:justify-start gap-2">
                                 <span className="text-5xl font-extrabold text-brand-green">$199</span>
-                                <span className="text-lg text-slate-500 line-through decoration-slate-500">$499</span>
+                                <span className="text-lg text-slate-500 line-through decoration-slate-500">$399</span>
                             </div>
                             <p className="text-slate-400 mt-2 font-mono text-sm">One-time payment. 200+ Applications.</p>
                         </div>
