@@ -4,11 +4,13 @@ export default function manifest(): MetadataRoute.Manifest {
     return {
         name: "Vocancy",
         short_name: "Vocancy",
-        description: "Human-powered job application service for software engineers.",
+        description: "The curated talent network for GCC engineers.",
         start_url: "/",
         display: "standalone",
         background_color: "#030303",
         theme_color: "#030303",
+        orientation: "portrait",
+        categories: ["business", "finance", "productivity"],
         icons: [
             {
                 src: "/icon",
@@ -17,7 +19,7 @@ export default function manifest(): MetadataRoute.Manifest {
             },
             {
                 src: "/apple-icon",
-                sizes: "32x32",
+                sizes: "180x180",
                 type: "image/png",
             },
         ],
