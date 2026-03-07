@@ -55,7 +55,7 @@ export default function Navbar() {
                         </button>
                         <button
                             onClick={() => handleOpenModal("company")}
-                            className="bg-brand-green hover:bg-brand-green/90 text-obsidian px-5 py-2.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-brand-green/20 active:scale-95"
+                            className="bg-foreground hover:bg-foreground/90 text-background px-5 py-2.5 rounded-full font-bold text-sm transition-all shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:shadow-[0_0_20px_rgba(255,255,255,0.1)] active:scale-95"
                         >
                             Hire Engineers
                         </button>
@@ -84,13 +84,13 @@ export default function Navbar() {
                         <hr className="border-border my-2" />
                         <button
                             onClick={() => handleOpenModal("engineer")}
-                            className="bg-secondary text-foreground py-3 rounded-xl font-bold text-sm w-full active:scale-95 transition-all border border-border"
+                            className="borderless-glass text-foreground py-3 rounded-full font-bold text-sm w-full active:scale-95 transition-all"
                         >
                             Get Vetted
                         </button>
                         <button
                             onClick={() => handleOpenModal("company")}
-                            className="bg-brand-green text-obsidian py-3 rounded-xl font-bold text-sm w-full active:scale-95 transition-all"
+                            className="bg-foreground text-background py-3 rounded-full font-bold text-sm w-full active:scale-95 transition-all shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:shadow-[0_0_20px_rgba(255,255,255,0.1)]"
                         >
                             Hire Engineers
                         </button>

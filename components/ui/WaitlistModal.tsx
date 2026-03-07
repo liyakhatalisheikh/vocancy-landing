@@ -77,7 +77,7 @@ export default function WaitlistModal({ isOpen, onClose, type, plan }: WaitlistM
             <div className="absolute inset-0 bg-background/80 backdrop-blur-md" onClick={onClose} />
 
             {/* Modal */}
-            <div className="relative w-full max-w-md glass rounded-2xl shadow-2xl shadow-black/20 overflow-hidden animate-in zoom-in-95 duration-200">
+            <div className="relative w-full max-w-md borderless-glass rounded-[2rem] shadow-[0_0_50px_rgba(0,0,0,0.2)] dark:shadow-[0_0_50px_rgba(255,255,255,0.05)] overflow-hidden animate-in zoom-in-95 duration-200">
 
                 {/* Green gradient accent */}
                 <div className="h-px bg-gradient-to-r from-transparent via-brand-green to-transparent" />
@@ -106,7 +106,7 @@ export default function WaitlistModal({ isOpen, onClose, type, plan }: WaitlistM
                             </p>
                             <button
                                 onClick={onClose}
-                                className="px-6 py-3 glass rounded-xl text-foreground text-sm font-bold hover:border-brand-green/30 active:scale-95 transition-all"
+                                className="px-8 py-3 bg-secondary/50 rounded-full text-foreground text-sm font-bold hover:bg-secondary/80 active:scale-95 transition-all"
                             >
                                 Close
                             </button>
@@ -197,7 +197,7 @@ export default function WaitlistModal({ isOpen, onClose, type, plan }: WaitlistM
                                 <button
                                     type="submit"
                                     disabled={submitting}
-                                    className="w-full px-6 py-4 bg-brand-green text-obsidian font-bold rounded-2xl hover:shadow-2xl hover:shadow-brand-green/25 hover:scale-[1.02] active:scale-95 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2 text-sm mt-2"
+                                    className="w-full px-6 py-4 bg-foreground text-background font-bold rounded-full shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.02] active:scale-95 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2 text-sm mt-4"
                                 >
                                     {submitting ? "Submitting..." : type === "engineer" ? "Request Vetting Slot" : "Get Network Access"}
                                     {!submitting && <ArrowRight className="w-4 h-4" />}

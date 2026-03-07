@@ -44,66 +44,67 @@ export default function HowItWorks() {
         <section
             id="how-it-works"
             ref={ref}
-            className={`py-24 md:py-32 px-6 border-t border-border relative overflow-hidden transition-all duration-1000 transform ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+            className={`py-32 md:py-48 px-6 relative overflow-hidden transition-all duration-1000 transform ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-            {/* Background */}
-            <div className="absolute inset-0 bg-dot-grid opacity-30 -z-10" />
-
             <div className="max-w-5xl mx-auto">
-                <div className="text-center mb-20">
-                    <h2 className="text-3xl md:text-5xl font-bold text-gradient font-sans">
+                <div className="mb-24 md:mb-32">
+                    <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-foreground mb-6">
                         How it works
                     </h2>
-                    <p className="text-muted-foreground mt-4 max-w-lg mx-auto">
-                        A simple, fair process — designed for engineers and companies in the GCC.
+                    <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
+                        A seamless, fast-tracked process designed to respect your time and maximize your value.
                     </p>
                 </div>
 
-                {/* Steps */}
-                <div className="grid md:grid-cols-2 gap-6 mb-20">
-                    {steps.map((step) => (
-                        <div
-                            key={step.num}
-                            className="glass rounded-2xl p-8 hover:border-brand-green/30 hover:shadow-xl hover:shadow-brand-green/5 hover:-translate-y-1 transition-all duration-300 group"
-                        >
-                            <div className="flex items-center gap-4 mb-4">
-                                <span className="text-3xl font-black text-brand-green/20 font-mono group-hover:text-brand-green/40 transition-colors">
+                {/* Vertical Organic Timeline */}
+                <div className="relative space-y-20 md:space-y-32 mb-32">
+                    {/* Faint connecting line */}
+                    <div className="absolute left-[27px] md:left-[39px] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-border to-transparent -z-10" />
+
+                    {steps.map((step, index) => (
+                        <div key={step.num} className="flex gap-8 md:gap-16 relative">
+                            {/* Number Indicator */}
+                            <div className="relative shrink-0 flex flex-col items-center">
+                                <div className="w-14 h-14 md:w-20 md:h-20 rounded-full borderless-glass flex items-center justify-center text-lg md:text-2xl font-bold text-foreground relative z-10 shadow-[0_0_30px_rgba(0,0,0,0.1)]">
                                     {step.num}
-                                </span>
-                                <h3 className="text-xl font-bold text-foreground">{step.title}</h3>
+                                </div>
                             </div>
-                            <p className="text-muted-foreground leading-relaxed text-sm">{step.desc}</p>
+
+                            {/* Content */}
+                            <div className="pt-2 md:pt-4 max-w-xl">
+                                <h3 className="text-2xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">{step.title}</h3>
+                                <p className="text-lg text-muted-foreground leading-relaxed">{step.desc}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
 
-                {/* Guarantees */}
-                <div className="glass rounded-2xl p-6 md:p-8 mb-20">
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {/* Guarantees - Floating soft pill layout instead of boxes */}
+                <div className="mb-24">
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-widest mb-8">The Vocancy Guarantee</h4>
+                    <div className="flex flex-wrap gap-3 md:gap-4">
                         {guarantees.map((g) => (
-                            <div key={g} className="flex items-center gap-2 text-sm text-muted-foreground">
+                            <div key={g} className="flex items-center gap-3 px-5 py-3 rounded-full borderless-glass text-sm text-foreground hover:bg-white/5 transition-colors">
                                 <CheckCircle className="w-4 h-4 text-brand-green flex-shrink-0" />
-                                <span>{g}</span>
+                                <span className="font-medium">{g}</span>
                             </div>
                         ))}
                     </div>
                 </div>
 
                 {/* Dual CTA */}
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div className="flex flex-col sm:flex-row items-start gap-4">
                     <button
                         onClick={() => openModal("engineer")}
-                        className="px-8 py-4 bg-brand-green text-obsidian font-bold rounded-2xl hover:shadow-2xl hover:shadow-brand-green/25 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center gap-2"
+                        className="px-8 py-4 bg-foreground text-background font-bold rounded-full shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center gap-2"
                     >
                         Apply as Engineer
-                        <UserPlus className="w-4 h-4" />
                     </button>
                     <button
                         onClick={() => openModal("company")}
-                        className="px-8 py-4 glass font-bold rounded-2xl text-foreground hover:border-brand-green/30 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center gap-2"
+                        className="px-8 py-4 borderless-glass font-bold rounded-full text-foreground hover:bg-white/10 active:scale-95 transition-all duration-300 flex items-center gap-2"
                     >
                         Hire Talent
-                        <Building2 className="w-4 h-4" />
                     </button>
                 </div>
             </div>

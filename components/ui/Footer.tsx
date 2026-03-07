@@ -46,14 +46,14 @@ export default function Footer() {
                     <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
                         <button
                             onClick={() => openModal("engineer")}
-                            className="px-8 py-4 bg-brand-green text-obsidian font-bold text-sm rounded-xl hover:bg-brand-green/90 transition-all flex items-center gap-2 shadow-lg shadow-brand-green/20 active:scale-95"
+                            className="px-8 py-4 bg-foreground text-background font-bold text-sm rounded-full hover:scale-[1.02] transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:shadow-[0_0_20px_rgba(255,255,255,0.1)] active:scale-95"
                         >
                             Get Vetted — It&apos;s Free
                             <ArrowRight className="w-4 h-4" />
                         </button>
                         <button
                             onClick={() => openModal("company")}
-                            className="px-8 py-4 bg-secondary border border-border text-foreground font-bold text-sm rounded-xl hover:border-brand-green/30 transition-all flex items-center gap-2 active:scale-95"
+                            className="px-8 py-4 borderless-glass text-foreground font-bold text-sm rounded-full hover:bg-white/10 transition-all flex items-center gap-2 active:scale-95"
                         >
                             Hire Engineers
                         </button>

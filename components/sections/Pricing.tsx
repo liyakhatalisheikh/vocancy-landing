@@ -60,42 +60,42 @@ export default function Pricing() {
         <section
             id="pricing"
             ref={ref}
-            className={`py-24 md:py-32 px-6 border-t border-border relative overflow-hidden transition-all duration-1000 transform ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+            className={`py-32 md:py-48 px-6 relative overflow-hidden transition-all duration-1000 transform ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-            <div className="absolute inset-0 bg-dot-grid opacity-30 -z-10" />
-
-            <div className="max-w-5xl mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-gradient mb-4 font-sans">
-                        Pricing
-                    </h2>
-                    <p className="text-muted-foreground max-w-lg mx-auto">
-                        No hidden fees. Equivalent pricing in SAR and QAR available.
-                    </p>
+            <div className="max-w-6xl mx-auto">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20 md:mb-32">
+                    <div className="max-w-xl">
+                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-foreground mb-6">
+                            Transparent Pricing
+                        </h2>
+                        <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+                            No hidden fees. Pay only for successful placements or secure a flat annual rate.
+                        </p>
+                    </div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid lg:grid-cols-3 gap-8 items-center">
                     {plans.map((plan, i) => (
                         <div
                             key={i}
-                            className={`relative glass rounded-2xl p-8 flex flex-col hover:-translate-y-1 transition-all duration-300 ${plan.popular
-                                ? "border-brand-green/40 glow-green shadow-lg"
-                                : "hover:border-brand-green/20 hover:shadow-xl hover:shadow-brand-green/5"
+                            className={`relative borderless-glass p-10 flex flex-col transition-all duration-500 min-h-[500px] ${plan.popular
+                                ? "rounded-[3rem] lg:-mt-12 lg:mb-12 shadow-[0_0_60px_rgba(61,242,181,0.1)] z-10"
+                                : "rounded-[2.5rem] hover:-translate-y-2 opacity-90 hover:opacity-100"
                                 }`}
                         >
                             {plan.popular && (
-                                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-brand-green text-obsidian text-xs font-bold uppercase tracking-wider rounded-full shadow-lg shadow-brand-green/30">
+                                <div className="absolute -top-4 right-10 px-4 py-1.5 bg-brand-green text-black text-xs font-bold uppercase tracking-wider rounded-full shadow-[0_0_20px_rgba(61,242,181,0.3)]">
                                     Most Popular
                                 </div>
                             )}
 
-                            <div className="mb-8">
-                                <h3 className="text-lg font-bold text-foreground mb-2">{plan.name}</h3>
+                            <div className="mb-12">
+                                <h3 className="text-xl font-bold text-foreground mb-4">{plan.name}</h3>
                                 <div className="flex items-baseline gap-1 mb-2">
-                                    <span className="text-3xl font-bold text-foreground tracking-tight">{plan.price}</span>
-                                    {plan.period !== "annual" && <span className="text-sm text-muted-foreground">/{plan.period}</span>}
+                                    <span className="text-4xl lg:text-5xl font-bold text-foreground tracking-tighter">{plan.price}</span>
+                                    {plan.period !== "annual" && <span className="text-sm font-medium text-muted-foreground ml-2">/{plan.period}</span>}
                                 </div>
-                                <p className="text-sm text-muted-foreground leading-relaxed">{plan.desc}</p>
+                                <p className="text-sm text-muted-foreground leading-relaxed mt-4">{plan.desc}</p>
                             </div>
 
                             <div className="flex-grow mb-8 space-y-3">
@@ -109,9 +109,9 @@ export default function Pricing() {
 
                             <button
                                 onClick={() => openModal("company", plan.name)}
-                                className={`w-full py-3.5 rounded-2xl font-bold text-sm transition-all duration-300 active:scale-95 ${plan.popular
-                                    ? "bg-brand-green text-obsidian hover:shadow-2xl hover:shadow-brand-green/25 hover:scale-[1.02]"
-                                    : "glass text-foreground hover:border-brand-green/30 hover:scale-[1.02]"
+                                className={`w-full py-4 rounded-full font-bold text-sm transition-all duration-300 active:scale-95 ${plan.popular
+                                    ? "bg-foreground text-background shadow-[0_0_20px_rgba(0,0,0,0.1)] dark:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.02]"
+                                    : "bg-background/20 text-foreground hover:bg-background/40 hover:scale-[1.02]"
                                     }`}
                             >
                                 {plan.cta}
