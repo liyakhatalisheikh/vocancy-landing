@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
     return {
         name: "Vocancy",
         short_name: "Vocancy",
-        description: "The curated talent network for GCC engineers.",
+        description: "The curated talent network for Indian engineers.",
         start_url: "/",
         display: "standalone",
         background_color: "#030303",

@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-    { value: 3, suffix: "", label: "GCC Countries", detail: "Qatar • UAE • Saudi Arabia" },
+    { value: 3, suffix: "", label: "India", detail: "Bengaluru • Hyderabad • Chennai" },
     { value: 8, suffix: "%", label: "Vetted Talent", detail: "Only top engineers accepted" },
     { value: 14, suffix: " day", label: "Decision Guarantee", detail: "Companies commit or lose access" },
     { value: 3, suffix: " max", label: "Interview Rounds", detail: "No 7-round marathons" },

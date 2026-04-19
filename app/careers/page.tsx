@@ -4,7 +4,7 @@ export default function CareersPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 font-sans">Join Vocancy</h1>
             <div className="prose prose-invert prose-lg text-slate-300">
                 <p className="text-xl text-white mb-8">
-                    Help us rewrite the hiring playbook for the GCC.
+                    Help us rewrite the hiring playbook for India.
                 </p>
                 <p>
                     We are a small, high-density team of engineers and operators. We don't have open roles right this second,

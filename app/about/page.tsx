@@ -4,10 +4,10 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 font-sans">About Vocancy</h1>
             <div className="prose prose-invert prose-lg text-slate-300">
                 <p className="text-xl text-brand-green mb-8">
-                    We are building the curated talent network for the GCC.
+                    We are building the curated talent network for India.
                 </p>
                 <p>
-                    Vocancy was born from a simple frustration: hiring great engineers in the GCC is harder than it should be.
+                    Vocancy was born from a simple frustration: hiring great engineers in India is harder than it should be.
                     Resumes get lost in black holes, recruiters charge 20% for unvetted profiles, and months are wasted on
                     interviews that go nowhere.
                 </p>

@@ -25,7 +25,7 @@ export default function MidPageCTA() {
                         Ready to make your move?
                     </h3>
                     <p className="text-muted-foreground text-sm max-w-md">
-                        Join vetted engineers and top GCC companies already in the network.
+                        Join vetted engineers and top Indian companies already in the network.
                     </p>
                 </div>
 

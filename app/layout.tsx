@@ -18,17 +18,17 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vocancy.com"),
-  title: "Vocancy | The Curated Talent Network for GCC Engineers",
-  description: "Vocancy is a curated talent marketplace where vetted engineers in Qatar, UAE, and Saudi Arabia receive interview requests from top companies. Free for engineers.",
+  title: "Vocancy | The Curated Talent Network for Indian Engineers",
+  description: "Vocancy is a curated talent marketplace where vetted engineers in India receive interview requests from top companies. Free for engineers.",
   keywords: [
-    "tech jobs GCC",
-    "engineer jobs UAE",
-    "engineer jobs Saudi Arabia",
-    "tech jobs Qatar",
-    "talent marketplace GCC",
+    "tech jobs India",
+    "engineer jobs Bengaluru",
+    "engineer jobs Hyderabad",
+    "tech jobs Chennai",
+    "talent marketplace India",
     "vetted engineers",
     "reverse recruiting",
-    "GCC hiring",
+    "India hiring",
     "no ghosting hiring",
     "curated talent placement",
     "curated talent marketplace",
@@ -36,19 +36,19 @@ export const metadata: Metadata = {
     "verified talent",
     "verified talent marketplace",
     "verified talent solutions",
-    "GCC tech jobs",
+    "India tech jobs",
   ],
   openGraph: {
-    title: "Vocancy | The Curated Talent Network for GCC Engineers",
-    description: "The curated talent network where top GCC companies compete for vetted engineers. Get vetted once. Let companies come to you.",
+    title: "Vocancy | The Curated Talent Network for Indian Engineers",
+    description: "The curated talent network where top Indian companies compete for vetted engineers. Get vetted once. Let companies come to you.",
     type: "website",
     locale: "en_US",
     siteName: "Vocancy",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vocancy | GCC Talent Network",
-    description: "Vetted engineers in Qatar, UAE & Saudi Arabia. Companies pay for access, engineers join free.",
+    title: "Vocancy | India Talent Network",
+    description: "Vetted engineers in India. Companies pay for success, engineers join free.",
   },
   robots: {
     index: true,
@@ -77,11 +77,11 @@ export default function RootLayout({
       "https://twitter.com/vocancy",
       "https://linkedin.com/company/vocancy"
     ],
-    "description": "The curated talent marketplace where top GCC companies compete for vetted engineers.",
+    "description": "The curated talent marketplace where top companies in India compete for vetted engineers.",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Dubai",
-      "addressCountry": "UAE"
+      "addressLocality": "Bengaluru",
+      "addressCountry": "India"
     }
   };
 

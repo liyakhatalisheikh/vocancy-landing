@@ -119,8 +119,8 @@ export default function WaitlistModal({ isOpen, onClose, type, plan }: WaitlistM
                                 </h3>
                                 <p className="text-muted-foreground text-sm">
                                     {type === "engineer"
-                                        ? "Free forever. Get vetted, receive interview requests from top GCC companies."
-                                        : "Access pre-vetted engineering talent in Qatar, UAE & Saudi Arabia."
+                                        ? "Free forever. Get vetted, receive interview requests from top Indian companies."
+                                        : "Access pre-vetted engineering talent in India."
                                     }
                                 </p>
                             </div>
@@ -185,9 +185,9 @@ export default function WaitlistModal({ isOpen, onClose, type, plan }: WaitlistM
                                                 className={inputClasses + " appearance-none"}
                                             >
                                                 <option value="">Select</option>
-                                                <option value="UAE">🇦🇪 UAE</option>
-                                                <option value="KSA">🇸🇦 KSA</option>
-                                                <option value="Qatar">🇶🇦 Qatar</option>
+                                                <option value="Bengaluru">Bengaluru</option>
+                                                <option value="Hyderabad">Hyderabad</option>
+                                                <option value="Chennai">Chennai</option>
                                                 <option value="Other">Other</option>
                                             </select>
                                         </div>

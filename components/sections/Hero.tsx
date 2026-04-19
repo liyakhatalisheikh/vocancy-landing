@@ -23,7 +23,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full borderless-glass text-xs font-semibold text-brand-green mb-8"
           >
             <Zap className="w-4 h-4" />
-            <span>The Premier GCC Talent Network</span>
+            <span>The Premier India Talent Network</span>
           </motion.div>
 
           <motion.h1
@@ -82,7 +82,7 @@ export default function Hero() {
                 </div>
               </div>
               <div>
-                <h4 className="font-bold text-foreground">Zayn</h4>
+                <h4 className="font-bold text-foreground">Arya</h4>
                 <p className="text-xs text-brand-green font-medium">98% Match Score</p>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function Hero() {
               <div className="p-2 bg-brand-green/20 rounded-xl text-brand-green"><Briefcase className="w-4 h-4" /></div>
               <h5 className="font-semibold text-sm text-foreground">New Opportunity</h5>
             </div>
-            <p className="text-xs text-muted-foreground">Senior Backend Engineer at Dubai stealth startup.</p>
+            <p className="text-xs text-muted-foreground">Senior Backend Engineer at Bengaluru stealth startup.</p>
           </div>
         </motion.div>
 

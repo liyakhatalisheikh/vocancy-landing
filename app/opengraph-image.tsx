@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Vocancy | The Curated Talent Network for GCC Engineers";
+export const alt = "Vocancy | The Curated Talent Network for Indian Engineers";
 export const size = {
     width: 1200,
     height: 630,
@@ -60,7 +60,7 @@ export default async function Image() {
 
                 {/* Tagline */}
                 <div style={{ display: "flex", flexDirection: "column", fontSize: "32px", color: "white", textAlign: "center", maxWidth: "1000px", alignItems: "center", fontWeight: "bold" }}>
-                    <span>The Curated Network for GCC Engineers</span>
+                    <span>The Curated Network for Indian Engineers</span>
                     <span style={{ color: "#3DF2B5", marginTop: "15px", fontSize: "28px", fontFamily: "monospace" }}>Get Vetted. Get Offers. Zero Ghosting.</span>
                 </div>
             </div>

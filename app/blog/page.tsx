@@ -8,8 +8,8 @@ export default function BlogPage() {
                 <div className="mt-12 grid gap-8">
                     <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
                         <span className="text-brand-green text-sm font-mono">Feb 2026</span>
-                        <h2 className="text-2xl font-bold text-white mt-2 mb-3">The State of Tech Hiring in GCC</h2>
-                        <p className="text-slate-400">Why salaries are rising in Riyadh and Dubai, and what it means for senior engineers.</p>
+                        <h2 className="text-2xl font-bold text-white mt-2 mb-3">The State of Tech Hiring in India</h2>
+                        <p className="text-slate-400">Why salaries are rising in Bengaluru and Hyderabad, and what it means for senior engineers.</p>
                     </div>
                 </div>
             </div>

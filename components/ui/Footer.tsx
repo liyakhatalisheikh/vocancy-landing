@@ -73,12 +73,12 @@ export default function Footer() {
                                 <span className="font-bold text-xl text-foreground font-sans">Vocancy</span>
                             </div>
                             <p className="text-muted-foreground text-sm leading-relaxed mb-4 max-w-xs">
-                                The curated talent network for GCC engineers.
+                                The curated talent network for Indian engineers.
                             </p>
                             <div className="flex gap-2 text-xs text-muted-foreground font-mono">
-                                <span className="px-2 py-1 rounded bg-secondary border border-border">🇶🇦 Qatar</span>
-                                <span className="px-2 py-1 rounded bg-secondary border border-border">🇦🇪 UAE</span>
-                                <span className="px-2 py-1 rounded bg-secondary border border-border">🇸🇦 KSA</span>
+                                <span className="px-2 py-1 rounded bg-secondary border border-border">Bengaluru</span>
+                                <span className="px-2 py-1 rounded bg-secondary border border-border">Hyderabad</span>
+                                <span className="px-2 py-1 rounded bg-secondary border border-border">Chennai</span>
                             </div>
                         </div>
 
@@ -121,7 +121,7 @@ export default function Footer() {
                             &copy; {new Date().getFullYear()} Vocancy. All rights reserved.
                         </div>
                         <div className="flex items-center gap-1 text-xs text-muted-foreground font-mono">
-                            Built with <Heart className="w-3 h-3 text-red-500 fill-red-500" /> for GCC engineers
+                            Built with <Heart className="w-3 h-3 text-red-500 fill-red-500" /> for Indian engineers
                         </div>
                     </div>
                 </div>

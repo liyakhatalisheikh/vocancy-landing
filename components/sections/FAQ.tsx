@@ -10,15 +10,15 @@ const faqs = [
     },
     {
         q: "Is Vocancy really free for engineers?",
-        a: "Yes, completely free — always. Revenue comes exclusively from companies who pay for access to our curated network. Engineers never pay a dirham.",
+        a: "Yes, completely free — always. Revenue comes exclusively from companies who pay for access to our curated network. Engineers never pay a single rupee.",
     },
     {
         q: "How do you enforce the zero-ghosting policy?",
         a: "Every company on Vocancy commits to our Hiring Standards Agreement. They must respond within the committed timeline, provide written feedback if declining, and make decisions within 2 weeks. Repeated offenders lose network access permanently.",
     },
     {
-        q: "Why focus on the GCC region?",
-        a: "Focus creates quality. The GCC market is booming, but hiring is broken. By focusing on engineers in Qatar, UAE, and Saudi Arabia, we can vet deeply and build a truly curated network where quality is guaranteed.",
+        q: "Why focus on India?",
+        a: "Focus creates quality. The Indian market is booming, but hiring is broken. By focusing on engineers in India, we can vet deeply and build a truly curated network where quality is guaranteed.",
     },
     {
         q: "What if I'm not actively looking for a job?",
@@ -26,11 +26,11 @@ const faqs = [
     },
     {
         q: "How is pricing structured for companies?",
-        a: "Simple options: Pay-per-Hire (AED 25,000) or Growth Membership (AED 55,000/yr) for continuous hiring. Enterprise plans are custom. All pricing is transparent — no hidden recruiter commissions.",
+        a: "Pricing is simple: ₹1.5L per mid-level hire, ₹2.5L per senior hire. Pay only on success. There are no upfront fees, no subscriptions, and it's always free for engineers.",
     },
     {
-        q: "Can companies outside the GCC join?",
-        a: "Currently, Vocancy focuses on companies hiring for GCC-based roles (Qatar, UAE, Saudi Arabia). If you're a global company hiring engineers for GCC offices, you're welcome.",
+        q: "Can companies outside India join?",
+        a: "Currently, Vocancy focuses on companies hiring for India-based roles. If you're a global company hiring engineers for your India offices, you're welcome.",
     },
 ];
 

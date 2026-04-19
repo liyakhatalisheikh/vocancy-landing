@@ -6,50 +6,35 @@ import { useModal } from "../ui/ModalProvider";
 
 const plans = [
     {
-        name: "Per-Hire",
-        price: "AED 25,000",
-        period: "per hire",
-        desc: "Pay only when you succeed. Competitive 10–12% effective rate.",
+        name: "Mid-Level Hire",
+        price: "₹1.5L",
+        period: "per success",
+        desc: "Perfect for scaling your core engineering team with proven talent.",
         features: [
+            "Vetted mid-level engineers",
             "Unlimited candidate browsing",
             "Unlimited interview requests",
-            "AED 25,000 per success",
-            "90-day retention guarantee",
-            "Standard support",
+            "60-day replacement guarantee",
+            "No upfront fees",
         ],
         cta: "Start Hiring",
         popular: false,
     },
     {
-        name: "Growth",
-        price: "AED 55,000",
-        period: "per year",
-        desc: "For growing teams hiring 2–3 engineers per year.",
+        name: "Senior Hire",
+        price: "₹2.5L",
+        period: "per success",
+        desc: "For mission-critical leadership and expert technical roles.",
         features: [
-            "Up to 3 successful hires/yr",
-            "~AED 18,300 effective cost/hire",
-            "Unlimited browsing & requests",
-            "Priority support",
-            "Custom branding on profile",
+            "Top 5% senior & staff engineers",
+            "Priority talent matching",
+            "Unlimited interview requests",
+            "60-day replacement guarantee",
+            "Dedicated account support",
         ],
-        cta: "Get Membership",
+        cta: "Start Hiring",
         popular: true,
-    },
-    {
-        name: "Enterprise",
-        price: "Custom",
-        period: "annual",
-        desc: "For teams scaling fast. Unlimited hiring at a fixed cost.",
-        features: [
-            "Unlimited hires",
-            "Dedicated account manager",
-            "API Access & ATS Integration",
-            "Custom vetting pipelines",
-            "SLA guarantees",
-        ],
-        cta: "Contact Sales",
-        popular: false,
-    },
+    }
 ];
 
 export default function Pricing() {
@@ -69,12 +54,12 @@ export default function Pricing() {
                             Transparent Pricing
                         </h2>
                         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                            No hidden fees. Pay only for successful placements or secure a flat annual rate.
+                            No hidden fees. Pay only for successful placements. No subscriptions to start.
                         </p>
                     </div>
                 </div>
 
-                <div className="grid lg:grid-cols-3 gap-8 items-center">
+                <div className="grid md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
                     {plans.map((plan, i) => (
                         <div
                             key={i}

@@ -51,7 +51,7 @@ export default function ProblemSection() {
                             Companies spend 6 months filtering 1,000+ unqualified resumes to find 1 senior hire.
                         </p>
                         <p className="text-sm text-white font-medium">
-                            Result: AED 500k+ Opportunity Cost.
+                            Result: ₹50L+ Opportunity Cost.
                         </p>
                         <div className="mt-6 pt-4 border-t border-slate-800">
                             <span className="text-xs font-mono text-slate-500 uppercase tracking-widest">Companies</span>
